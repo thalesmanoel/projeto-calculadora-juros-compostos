@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Juros Compostos</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Calculadora de Juros Compostos</h1>
+        <div class="container">
+            <div class="itens">
+                <p><label for="valIni">Valor Inicial:</label>
+                <input type="number" placeholder="R$0,00" id="valIni"></p>
+
+                <p><label for="aporte">Aporte Mensal:</label>
+                <input type="number" placeholder="R$0,00" id="aporte"></p>
+
+                <p><label for="juros">Taxa de Juros:</label>
+                <input type="number" placeholder="% a.m." id="juros">
+                </p>
+
+                <p><label for="tempo">Tempo:</label>
+                <input type="number" id="tempo">
+                <select id="selectTempo">
+                    <option value="mensal">Mensal</option>
+                    <option value="anual">Anual</option>
+                </select></p>
+                
+                <div class="botoes">
+                    <button onclick="calcular()">Calcular</button>
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container2" id="resultados">
+            
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

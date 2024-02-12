@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --color1: rgb(0, 247, 255);
+    --color2: black;
+    --color3: white;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin-top: auto;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color2);
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border: 7px solid var(--color3);
+    border-radius: 5px;
+    gap: 30px;
+}
+
+.main-transition{
+    transition: height 0.5s ease-in-out;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 5px solid var(--color3);
+    padding: 10px;
+}
+
+h1{
+    color: var(--color1);
+    text-align: center;
+    border: 5px solid var(--color3);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+p{
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+input{
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#selectTempo, button{
+    background-color: var(--color2);
+    border-radius: 5px;
+    color: var(--color1);
+    font-weight: bold;
+    border: 2px solid var(--color1);
+}
+
+.botoes{
+    display: flex;
+    gap: 10px;
+    padding-top: 7px
+}
+
+button{
+    width: 135px;
+    padding: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--color3);
+    font-weight: bold;
+    background-color: var(--color1);
+}
+
+.container2{
+    transition: opacity 0.6s ease-in-out;
+    opacity: 0;
+}
+
+.itens2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--color3);
+    padding: 10px;
+    text-align: center;
+    gap: 6px;
+}
+
+.resultTotal, .resultJuros, .resultInvest{
+    background-color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+}
